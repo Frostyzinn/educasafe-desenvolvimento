@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Coordenador - EducaSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i>EducaSafe</a>
+        
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active"><i class="fas fa-home"></i> Visão Geral</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i> Gestão de Provas</a></li>
+                <li><a href="#"><i class="fas fa-chart-pie"></i> Desempenho (Geral)</a></li>
+                <li><a href="#"><i class="fas fa-users-cog"></i> Professores</a></li>
+                <li><a href="#"><i class="fas fa-database"></i> Banco de Questões</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="sidebar-logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </aside>
+
+    <main class="main-content">
+        <h1>Painel do Coordenador</h1>
+        <div class="quick-actions">
+            <a href="#" class="btn btn-primary btn-icon"><i class="fas fa-file-invoice"></i> Gerar Relatório Pedagógico</a>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Atividade Recente (Toda a Escola)</h2>
+                    <a href="#">Ver Todas</a>
+                </div>
+                <ul class="item-list">
+                    <li>
+                        <div class="item-info">
+                            <strong>(Prof. Carlos) - Prova de Biologia 9A</strong>
+                            <span>Status: Agendada para 15/10</span>
+                        </div>
+                        <span class="status-badge status-scheduled">Agendada</span>
+                    </li>
+                    <li>
+                        <div class="item-info">
+                            <strong>(Prof. Ana) - Simulado de História 3A</strong>
+                            <span>Status: Correção finalizada</span>
+                        </div>
+                        <span class="status-badge status-corrected">Corrigida</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Desempenho por Matéria (Média)</h2>
+                    <a href="#">Relatório Completo</a>
+                </div>
+                <ul class="item-list">
+                    <li>
+                        <div class="item-info">
+                            <strong>Matemática</strong>
+                            <span>12 Provas | Média: 6.8</span>
+                        </div>
+                        <span class="status-badge status-neutral">Regular</span>
+                    </li>
+                    <li>
+                        <div class="item-info">
+                            <strong>Português</strong>
+                            <span>10 Provas | Média: 8.2</span>
+                        </div>
+                         <span class="status-badge status-corrected">Bom</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

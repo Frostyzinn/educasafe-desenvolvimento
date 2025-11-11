@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos e Preços - EducaSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="container navbar">
+            <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i>EducaSafe</a>
+            <ul class="nav-links">
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="planos.html" class="active">Planos</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="login.html" class="btn btn-secondary">Login</a>
+                <a href="cadastro.html" class="btn btn-primary">Cadastre-se</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-section">
+            <div class="container">
+                <h2>Planos flexíveis para cada instituição.</h2>
+                <p>Escolha o plano que melhor se encaixa nas suas necessidades, com a opção de faturamento anual com desconto.</p>
+
+                <div class="plan-toggle">
+                    <label class="toggle-label active" data-period="monthly">Mensal</label>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="plan-toggle-checkbox">
+                        <label class="toggle-slider" for="plan-toggle-checkbox"></label>
+                    </div>
+                    <label class="toggle-label" data-period="yearly">Anual (Economize 20%)</label>
+                </div>
+
+                <div class="pricing-grid">
+                    
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Plano Básico</h3>
+                            <p>Para professores e pequenas turmas.</p>
+                            <div class="plan-price-container">
+                                <span class="plan-price" data-monthly="R$ 49" data-yearly="R$ 39">R$ 49</span>
+                                <span class="plan-period">/mês</span>
+                            </div>
+                            <span class="anual-price" data-period="yearly">Total de R$ 468/ano</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> 500 alunos ativos</li>
+                            <li><i class="fas fa-check"></i> 20 provas / mês</li>
+                            <li><i class="fas fa-check"></i> Banco de Questões</li>
+                            <li><i class="fas fa-check"></i> Correção Automática</li>
+                            <li><i class="fas fa-times"></i> Monitoramento por Webcam</li>
+                            <li><i class="fas fa-times"></i> Navegador de Bloqueio</li>
+                            <li><i class="fas fa-times"></i> Relatórios Avançados</li>
+                        </ul>
+                        <a href="cadastro.html" class="btn btn-secondary btn-full">Começar Agora</a>
+                    </div>
+
+                    <div class="pricing-card plan-popular">
+                        <div class="popular-badge">Mais Popular</div>
+                        <div class="plan-header">
+                            <h3>Plano Pro</h3>
+                            <p>A solução completa para escolas.</p>
+                            <div class="plan-price-container">
+                                <span class="plan-price" data-monthly="R$ 199" data-yearly="R$ 159">R$ 199</span>
+                                <span class="plan-period">/mês</span>
+                            </div>
+                            <span class="anual-price" data-period="yearly">Total de R$ 1908/ano</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> 2.000 alunos ativos</li>
+                            <li><i class="fas fa-check"></i> Provas ilimitadas</li>
+                            <li><i class="fas fa-check"></i> Banco de Questões</li>
+                            <li><i class="fas fa-check"></i> Correção Automática</li>
+                            <li><i class="fas fa-check"></i> 
+                                <span class="tooltip-trigger">
+                                    Monitoramento por Webcam
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="tooltip-text">Nossa IA monitora o aluno, detectando desvios de olhar, presença de outras pessoas ou uso de celular.</span>
+                                </span>
+                            </li>
+                            <li><i class="fas fa-check"></i> 
+                                <span class="tooltip-trigger">
+                                    Navegador de Bloqueio
+                                    <i class="fas fa-info-circle"></i>
+                                    <span class="tooltip-text">Impede o aluno de abrir outras abas, aplicativos ou usar as teclas "copiar/colar" durante a prova.</span>
+                                </span>
+                            </li>
+                            <li><i class="fas fa-check"></i> Relatórios Avançados</li>
+                        </ul>
+                        <a href="cadastro.html" class="btn btn-primary btn-full">Escolher Plano Pro</a>
+                    </div>
+
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <h3>Plano Enterprise</h3>
+                            <p>Para grandes redes e universidades.</p>
+                            <div class="plan-price-container">
+                                <span class="plan-price" data-monthly="Sob Consulta" data-yearly="Sob Consulta">Sob Consulta</span>
+                            </div>
+                            <span class="anual-price" data-period="yearly">Faturamento personalizado</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i class="fas fa-check"></i> Alunos ilimitados</li>
+                            <li><i class="fas fa-check"></i> Provas ilimitadas</li>
+                            <li><i class="fas fa-check"></i> Todos os recursos do Pro</li>
+                            <li><i class="fas fa-check"></i> Integração (API/LMS)</li>
+                            <li><i class="fas fa-check"></i> Suporte Dedicado (Gerente)</li>
+                            <li><i class="fas fa-check"></i> Relatórios Personalizados</li>
+                            <li><i class="fas fa-check"></i> Marca Branca (White-label)</li>
+                        </ul>
+                        <a href="#" class="btn btn-secondary btn-full">Entrar em Contato</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Comparativo Detalhado de Recursos</h2>
+                <p>Veja em detalhes cada questão sobre o que está incluído em cada plano.</p>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Recursos Principais</th>
+                            <th>Básico</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alunos Ativos</td>
+                            <td>500</td>
+                            <td>2.000</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td>Provas por Mês</td>
+                            <td>20</td>
+                            <td>Ilimitado</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <td>Banco de Questões</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Correção Automática (Múltipla Escolha)</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Relatórios Básicos (Nota da Turma)</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Recursos de Segurança (Anti-Fraude)</th>
+                            <th>Básico</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                         <tr>
+                            <td>Monitoramento por Webcam (IA)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Navegador de Bloqueio (Lockdown)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Detecção de Plágio (Dissertativas)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Reconhecimento Facial (Login)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr>
+                            <th>Relatórios e Gestão</th>
+                            <th>Básico</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Relatórios Avançados (por Questão)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Perfis (Professor, Coordenador, Diretor)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Integração API e LMS (ex: Moodle)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Suporte por E-mail</td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Suporte Dedicado (Gerente de Conta)</td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-times"></i></td>
+                            <td><i class="fas fa-check"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="container">
+                <blockquote>
+                    "O Plano Pro do EducaSafe transformou nossas avaliações. O monitoramento por webcam nos deu a segurança que precisávamos para o ensino híbrido. A adesão foi de 100%."
+                    <cite>– Maria Oliveira, Coordenadora Pedagógica</cite>
+                </blockquote>
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Perguntas Frequentes (FAQ)</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Qual plano é o melhor para mim?</h3>
+                        <p>O <strong>Plano Pro</strong> é o melhor custo-benefício para escolas, pois inclui as ferramentas de segurança (webcam e navegador) que garantem a integridade das provas. O <strong>Plano Básico</strong> é ideal para professores individuais com turmas pequenas.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>O que significa "alunos ativos"?</h3>
+                        <p>Um "aluno ativo" é um aluno que está matriculado em pelo menos uma turma e pode realizar provas na plataforma. Você pode ter um banco de 1000 alunos, mas se apenas 500 podem fazer provas no mês, você só precisa do Plano Básico (nesse quesito).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Posso mudar de plano a qualquer momento?</h3>
+                        <p>Sim. Você pode fazer upgrade do seu plano a qualquer momento. O downgrade (mudar para um plano menor) só pode ser feito no final do seu ciclo de faturamento (mensal ou anual).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quais são as formas de pagamento?</h3>
+                        <p>Aceitamos todos os principais cartões de crédito (Visa, Mastercard, Amex) e boleto bancário (apenas para planos anuais).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('plan-toggle-checkbox');
+            const prices = document.querySelectorAll('.plan-price');
+            const periods = document.querySelectorAll('.plan-period');
+            const anualPriceInfo = document.querySelectorAll('.anual-price');
+            const labels = document.querySelectorAll('.toggle-label');
+
+            checkbox.addEventListener('change', function () {
+                const period = this.checked ? 'yearly' : 'monthly';
+
+                // Atualiza preços
+                prices.forEach(price => {
+                    price.textContent = price.getAttribute('data-' + period);
+                });
+
+                // Atualiza "/mês" (esconde se for "Sob Consulta")
+                periods.forEach((periodText, index) => {
+                    if (prices[index].textContent.includes('Consulta')) {
+                        periodText.style.display = 'none';
+                    } else {
+                        periodText.style.display = 'inline-block';
+                    }
+                });
+
+                // Mostra/Esconde o preço anual total
+                anualPriceInfo.forEach(info => {
+                    if (period === 'yearly' && !info.previousElementSibling.querySelector('.plan-price').textContent.includes('Consulta')) {
+                        info.style.display = 'block';
+                    } else {
+                        info.style.display = 'none';
+                    }
+                });
+
+                // Atualiza o "active" no label
+                labels.forEach(label => {
+                    if (label.getAttribute('data-period') === period) {
+                        label.classList.add('active');
+                    } else {
+                        label.classList.remove('active');
+                    }
+                });
+            });
+
+            // Dispara o evento 'change' no load para acertar os textos (caso o checkbox esteja 'checked' por cache)
+            checkbox.dispatchEvent(new Event('change'));
+        });
+    </script>
+</body>
+</html>

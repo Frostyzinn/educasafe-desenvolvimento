@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Diretor - EducaSafe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i>EducaSafe</a>
+        
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard (KPIs)</a></li>
+                <li><a href="#"><i class="fas fa-user-shield"></i> Gestão de Usuários</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Relatórios Acadêmicos</a></li>
+                <li><a href="#"><i class="fas fa-school"></i> Configurações da Escola</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="sidebar-logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </aside>
+
+    <main class="main-content">
+        <h1>Painel do Diretor</h1>
+        <div class="quick-actions">
+            <a href="#" class="btn btn-primary btn-icon"><i class="fas fa-user-plus"></i> Adicionar Novo Usuário</a>
+        </div>
+
+        <div class="dashboard-grid-single"> <div class="card">
+                <div class="card-header">
+                    <h2>Métricas da Instituição</h2>
+                    <a href="#">Ver Relatórios</a>
+                </div>
+                <div class="kpi-container">
+                    <div class="kpi-box">
+                        <h3>850</h3>
+                        <span>Alunos Ativos</span>
+                    </div>
+                    <div class="kpi-box">
+                        <h3>45</h3>
+                        <span>Professores</span>
+                    </div>
+                    <div class="kpi-box">
+                        <h3>1.204</h3>
+                        <span>Provas Realizadas (Mês)</span>
+                    </div>
+                    <div class="kpi-box">
+                        <h3>98%</h3>
+                        <span>Taxa de Adesão</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

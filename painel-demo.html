@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Demo - EducaSafe</title> <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="dashboard-body"> <aside class="sidebar"> <a href="index.html" class="logo"><i class="fas fa-shield-alt"></i>EducaSafe</a>
+        
+        <nav>
+            <ul class="sidebar-nav"> <li><a href="#" class="active"><i class="fas fa-home"></i> Visão Geral</a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> Minhas Provas</a></li>
+                <li><a href="#"><i class="fas fa-database"></i> Banco de Questões</a></li>
+                <li><a href="#"><i class="fas fa-users"></i> Minhas Turmas</a></li>
+                <li><a href="#"><i class="fas fa-chart-bar"></i> Resultados</a></li>
+                <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+            </ul>
+        </nav>
+        <a href="login.html" class="sidebar-logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+    </aside>
+
+    <main class="main-content"> <h1>Visão Geral (Painel Demo)</h1> <div class="quick-actions"> <a href="#" class="btn btn-primary btn-icon"><i class="fas fa-plus"></i> Criar Nova Prova</a>
+        </div>
+
+        <div class="dashboard-grid"> <div class="card"> <div class="card-header">
+                    <h2>Próximas Provas Agendadas</h2>
+                    <a href="#">Ver Todas</a>
+                </div>
+                <ul class="item-list"> <li>
+                        <div class="item-info">
+                            <strong>Avaliação Bimestral de Biologia</strong>
+                            <span>Turma 9A | Início: 15/10 às 14:00</span>
+                        </div>
+                        <span class="status-badge status-scheduled">Agendada</span>
+                    </li>
+                    <li>
+                        <div class="item-info">
+                            <strong>Prova de Recuperação de Matemática</strong>
+                            <span>Turma 2B | Início: 16/10 às 09:00</span>
+                        </div>
+                        <span class="status-badge status-scheduled">Agendada</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="card"> <div class="card-header">
+                    <h2>Últimas Correções</h2>
+                    <a href="#">Ver Todas</a>
+                </div>
+                <ul class="item-list"> <li>
+                        <div class="item-info">
+                            <strong>Simulado de História Geral</strong>
+                            <span>Turma 3A</span>
+                        </div>
+                        <span class="status-badge status-corrected">Corrigida</span>
+                    </li>
+                    <li>
+                        <div class="item-info">
+                            <strong>Teste de Física - Unidade 4</strong>
+                            <span>Turma 1C</span>
+                        </div>
+                         <span class="status-badge status-corrected">Corrigida</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
